@@ -9,14 +9,14 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 
-gem 'devise'
-gem 'devise-bootstrap-views'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'bootstrap-generators'
 gem 'slim-rails'
 gem 'simple_form'
 gem 'acts-as-taggable-on'
+gem 'trailblazer-rails'
+gem 'cells'
 
 group :development, :test do
   gem 'byebug', platform: :mri
