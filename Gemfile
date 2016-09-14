@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'acts-as-taggable-on'
 gem 'trailblazer-rails'
 gem 'cells'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'byebug', platform: :mri

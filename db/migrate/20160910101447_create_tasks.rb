@@ -3,6 +3,7 @@ class CreateTasks < ActiveRecord::Migration[5.0]
     create_table :tasks do |t|
       t.string :title
       t.string :body
+      t.string :body_rendered
       t.string :estimate_duration
       t.string :budget
 

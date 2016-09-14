@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20160910101561) do
   create_table "tasks", force: :cascade do |t|
     t.string   "title"
     t.string   "body"
+    t.string   "body_rendered"
     t.string   "estimate_duration"
     t.string   "budget"
     t.datetime "created_at",        null: false
@@ -50,8 +51,10 @@ ActiveRecord::Schema.define(version: 20160910101561) do
   end
 
   create_table "users", force: :cascade do |t|
+    t.string   "email"
     t.string   "name"
     t.string   "image"
+    t.text     "about"
     t.string   "provider"
     t.string   "uid"
     t.datetime "created_at", null: false

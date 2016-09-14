@@ -1,0 +1,8 @@
+class MarkdownRender
+
+  def self.render text
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+    markdown.render(text)
+  end
+
+end
